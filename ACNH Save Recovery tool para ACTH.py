@@ -70,3 +70,4 @@ moveFolders(acnh_save_path_eden, acnh_save_path_citron, eden_recovered_save, cit
 print("Your save file has been moved!")
 print("Please open your emulator, right click ACNH, then click 'Open Save Data Location' and move the contents of the '01006F8002326000' folder")
 print("into the window that opens!")
+user_input = input("Please press enter once you have read the above!")
