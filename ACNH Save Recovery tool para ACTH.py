@@ -54,20 +54,24 @@ def moveFolders(acnh_save_path_eden, acnh_save_path_citron, eden_recovered_save,
     try:
         # Moving time
         shutil.move(acnh_save_path_eden, eden_recovered_save)
+        # Tell the user that their save has been moved and what to do afterward
         print(f"Your Eden save data has been moved to {eden_recovered_save}\\01006F8002326000!!")
+        print("Your save file has been moved!")
+        print("Please open your emulator, right click ACNH, then click 'Open Save Data Location' and move the contents of the '01006F8002326000' folder")
+        print("into the window that opens!")
     # If we can't find the folder we need, inform the user that we can't find it
     except FileNotFoundError:
         print("No Eden Save Data Detected in Appdata!")
     # This does what lines 54 - 60 do but for Citron instead of Eden
     try:
         shutil.move(acnh_save_path_citron, citron_recovered_save)
+        # Tell the user that their save has been moved and what to do afterward
         print(f"Your Citron save data has been moved to {citron_recovered_save}\\01006F8002326000!!")
+        print("Your save file has been moved!")
+        print("Please open your emulator, right click ACNH, then click 'Open Save Data Location' and move the contents of the '01006F8002326000' folder")
+        print("into the window that opens!")
     except FileNotFoundError:
         print("No Citron Save Data Detected in Appdata!")
 # Execute the function
 moveFolders(acnh_save_path_eden, acnh_save_path_citron, eden_recovered_save, citron_recovered_save)
-# Tell the user we moved em and explain what to do with the moved files
-print("Your save file has been moved!")
-print("Please open your emulator, right click ACNH, then click 'Open Save Data Location' and move the contents of the '01006F8002326000' folder")
-print("into the window that opens!")
 user_input = input("Please press enter once you have read the above!")
