@@ -12,3 +12,8 @@ This tool does *not* work with portable installs. It was not designed for that.
 Like with my ACNH Installer, I am ***not*** affiliated with Nintendo in any way.
 
 This program contains no copyrighted code as I am merely moving files in the user's computer
+
+To Use:
+1) Download from the releases tab
+2) Extract the zip
+3) Run the exe
